@@ -31,6 +31,7 @@ cask install sonos
 cask install spotify
 cask install steam
 cask install textexpander
+cask install todoist
 cask install tower
 cask install tunnelblick
 cask install utorrent
