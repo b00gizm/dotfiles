@@ -13,3 +13,4 @@ install rbenv
 install ssh-copy-id
 install tree
 install watch
+install wget
