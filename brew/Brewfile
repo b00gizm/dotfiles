@@ -2,6 +2,7 @@
 
 install fig
 install git-flow
+install go
 install heroku-toolbelt
 install httpie
 install mitmproxy
@@ -9,6 +10,7 @@ install ngrep
 install nmap
 install nodejs
 install python
+install redis
 install rbenv
 install ssh-copy-id
 install tree

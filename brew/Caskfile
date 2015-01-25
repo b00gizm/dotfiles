@@ -27,6 +27,7 @@ cask install onepassword
 cask install sequel-pro
 cask install skitch
 cask install skype
+cask install slack
 cask install sonos
 cask install spotify
 cask install steam
