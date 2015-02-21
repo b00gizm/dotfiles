@@ -1,6 +1,8 @@
 # Run `brew bundle Caskfile`
 
+install ffmpeg
 install fig
+install gifsicle
 install git-flow
 install go
 install heroku-toolbelt

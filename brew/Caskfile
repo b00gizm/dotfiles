@@ -24,6 +24,7 @@ cask install keepassx
 cask install multibit
 cask install music-manager
 cask install onepassword
+cask install screenflow
 cask install sequel-pro
 cask install skitch
 cask install skype
