@@ -1,7 +1,6 @@
 # Run `brew bundle Caskfile`
 
 #Apps
-cask install appcleaner
 cask install atom
 cask install alfred
 cask install android-studio
@@ -24,6 +23,7 @@ cask install keepassx
 cask install multibit
 cask install music-manager
 cask install onepassword
+cask install screenflow
 cask install sequel-pro
 cask install skitch
 cask install skype
@@ -39,7 +39,7 @@ cask install vagrant
 cask install vlc
 
 #Fonts
-#cask install font-inconsolata
+cask install font-inconsolata
 cask install font-open-sans
 cask install font-signika
 cask install font-ubuntu
