@@ -7,7 +7,7 @@ cask install android-studio
 cask install bartender
 cask install balsamiq-mockups
 cask install boot2docker
-cask install cleanmymac
+cask install cocktail
 cask install dropbox
 cask install evernote
 cask install firefox
