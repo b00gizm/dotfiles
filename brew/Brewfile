@@ -1,5 +1,7 @@
 # Run `brew bundle Caskfile`
 
+install docker-compose
+install docker-machine
 install ffmpeg
 install gifsicle
 install git-flow
