@@ -84,3 +84,12 @@ function o() {
     open "$@";
   fi;
 }
+
+# Log into a docker-compose container an run commands inside a bash
+function fig-bash() {
+  if [ $# -eq 0 ]; then
+    docker-compose run --rm web bash;
+  else
+    docker-compose run --rm web $1;
+  fi;
+}

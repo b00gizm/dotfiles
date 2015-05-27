@@ -16,6 +16,9 @@ alias lh="ls -lh"
 alias ll='ls -lhG'     # -l long listing, human readable, no group info
 alias lt='ls -lt'      # sort with recently modified first
 
+# fig / docker-compose and friends
+alias fup="docker-compose up"
+
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
