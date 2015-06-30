@@ -13,8 +13,6 @@ install ngrep
 install nmap
 install nodejs
 install python
-install redis
-install rbenv
 install ssh-copy-id
 install tree
 install watch

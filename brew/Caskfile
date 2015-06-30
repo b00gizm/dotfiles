@@ -7,6 +7,7 @@ cask install android-studio
 cask install bartender
 cask install balsamiq-mockups
 cask install boot2docker
+cask install chromium
 cask install cocktail
 cask install dropbox
 cask install evernote
@@ -19,9 +20,6 @@ cask install hazel
 cask install istat-menus
 cask install iterm2
 cask install kaleidoscope
-cask install keepassx
-cask install multibit
-cask install music-manager
 cask install onepassword
 cask install screenflow
 cask install sequel-pro
@@ -36,6 +34,7 @@ cask install tower
 cask install tunnelblick
 cask install utorrent
 cask install vagrant
+cask install virtualbox
 cask install vlc
 
 #Fonts
