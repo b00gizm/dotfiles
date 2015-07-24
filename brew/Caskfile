@@ -1,13 +1,11 @@
 # Run `brew bundle Caskfile`
 
 #Apps
-cask install atom
 cask install alfred
 cask install android-studio
 cask install bartender
 cask install balsamiq-mockups
 cask install boot2docker
-cask install chromium
 cask install cocktail
 cask install dropbox
 cask install evernote
@@ -25,9 +23,8 @@ cask install screenflow
 cask install sequel-pro
 cask install skitch
 cask install skype
-cask install slack
 cask install sonos
-cask install spotify
+cask install sublime-text
 cask install steam
 cask install textexpander
 cask install tower
