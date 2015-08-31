@@ -1,0 +1,20 @@
+# git credential file 
+.gitconfig.local
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# PhpStorm meta files
+.idea
+
+# Compiled Python files
+*.pyc

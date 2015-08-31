@@ -1,9 +1,26 @@
 [user]
-	name = Pascal Cremer
-	email = b00gizm@gmail.com
+	name         = Pascal Cremer
+	email        = b00gizm@gmail.com
 
 [core]
+  ui           = always
 	excludesfile = ~/.gitignore
+
+[color "branch"]
+  current      = yellow reverse
+  local        = yellow
+  remote       = green
+
+[color "diff"]
+  meta         = yellow bold
+  frag         = magenta bold
+  old          = red bold
+  new          = green bold
+
+[color "status"]
+  added        = yellow
+  changed      = green
+  untracked    = cyan
 
 [alias]
   aa = add --all
