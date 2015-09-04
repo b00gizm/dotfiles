@@ -6,3 +6,7 @@ export PATH=$PATH:$HOME/.dotfiles/bin
 
 # docker-machine
 eval "$(docker-machine env dev)"
+
+# z
+sh $HOME/Code/z/z.sh
+
