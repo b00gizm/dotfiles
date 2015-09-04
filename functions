@@ -106,6 +106,28 @@ function o() {
   fi;
 }
 
+# Docker cleanup
+function dka() {
+  docker kill $(docker ps -q)
+}
+
+function drms() {
+  docker rm $(docker ps -a -q)
+}
+
+function drmd() {
+  docker rmi $(docker images -q -f dangling=true)
+}
+
+function drma() {
+  docker rmi $(docker images -q)
+}
+
+function dcu() {
+  docker rm -v $(docker ps -a -q)
+  docker rmi $(docker images -q --filter "dangling=true")
+}
+
 # Log into a docker-compose container an run commands inside a bash
 function fig-bash() {
   if [ $# -eq 0 ]; then
