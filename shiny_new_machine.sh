@@ -35,8 +35,11 @@ brew cleanup
 
 ### Common Tools
 
+# nvm - Node Version Manager
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
+
 # github.com/jamiew/git-friendly
-bash < <( curl https://raw.github.com/jamiew/git-friendly/master/install.sh)
+curl https://raw.github.com/jamiew/git-friendly/master/install.sh | bash
 
 # github.com/paulirish/git-open
 npm install -g git-open
