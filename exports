@@ -7,6 +7,8 @@ export PATH=$PATH:$HOME/.dotfiles/bin
 # docker-machine
 eval "$(docker-machine env dev)"
 
+# Misc
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # z
 sh $HOME/Code/z/z.sh
-
