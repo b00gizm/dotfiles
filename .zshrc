@@ -87,3 +87,6 @@ unsetopt correct
 source ~/.dotfiles/exports
 source ~/.dotfiles/aliases
 source ~/.dotfiles/functions
+
+export NVM_DIR="/Users/pascal.cremer/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
