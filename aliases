@@ -60,6 +60,9 @@ alias sudo='sudo '
 # Git
 alias undopush="git push -f origin HEAD^:master"  # Undo a git push
 
+# Docker
+alias dl="docker ps -l -q"
+
 # Edit /etc/hosts
 alias hosts='sudo $EDITOR /etc/hosts'
 

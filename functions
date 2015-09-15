@@ -106,28 +106,6 @@ function o() {
   fi;
 }
 
-# Docker cleanup
-function dka() {
-  docker kill $(docker ps -q)
-}
-
-function drms() {
-  docker rm $(docker ps -a -q)
-}
-
-function drmd() {
-  docker rmi $(docker images -q -f dangling=true)
-}
-
-function drma() {
-  docker rmi $(docker images -q)
-}
-
-function dcu() {
-  docker rm -v $(docker ps -a -q)
-  docker rmi $(docker images -q --filter "dangling=true")
-}
-
 # Log into a docker-compose container an run commands inside a bash
 function fig-bash() {
   if [ $# -eq 0 ]; then
@@ -135,4 +113,47 @@ function fig-bash() {
   else
     docker-compose run --rm web $1;
   fi;
+}
+
+# Docker goodies
+function d:ip() {
+  if [ $# -eq 0 ]; then
+    docker inspect `dl` | grep IPAddress | cut -d '"' -f 4
+  else
+    docker inspect $1 | grep IPAddress | cut -d '"' -f 4
+  fi
+}
+
+function d:find() {
+  if [ $# -eq 0 ]; then
+    echo "Usage: $0 <regex>"
+  else
+    for i in $(docker ps -a | grep "$1" | cut -f1 -d" "); do echo $i; done
+  fi
+}
+
+function d:env() {
+  if [ $# -eq 0 ]; then
+    echo "Usage: $0 <container-name>"
+  else
+    docker run --rm $1 env
+  fi
+}
+
+function d:kill() {
+  docker ps -q | awk '{print $1}' | xargs docker kill
+}
+
+function d:remove() {
+  docker ps -a -q -f status=exited | awk '{print $1}' | xargs docker rm
+}
+
+function d:cleanup() {
+  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+}
+
+function d:meh() {
+  d:kill
+  d:remove
+  d:cleanup
 }
