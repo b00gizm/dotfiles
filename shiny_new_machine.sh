@@ -48,6 +48,8 @@ npm install -g git-open
 git clone https://github.com/rupa/z.git ~/Code/z
 chmod +x ~/Code/z/z.sh
 
+# Composer
+curl -sS https://getcomposer.org/installer | php -- --install-dir=${HOME}/.dotfiles/bin --filename=composer
 
 ### Set OS X defaults
 sh osx/set_defaults.sh

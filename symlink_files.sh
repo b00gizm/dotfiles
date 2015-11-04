@@ -135,10 +135,9 @@ print_success() {
 
 
 # finds all .dotfiles in this folder
-declare -a FILES_TO_SYMLINK=".gitconfig .gitignore .zshrc"
+declare -a FILES_TO_SYMLINK=".gitconfig .gitignore .zshrc .vimrc.before .vimrc.after .gvimrc.before .gvimrc.after .tmux.conf"
 
 main() {
-
     local i=""
     local sourceFile=""
     local targetFile=""

@@ -1,0 +1,4 @@
+# Copy this file to exports.local and add any kind of exports that are unique
+# for this machine
+
+#export HOMEBREW_GITHUB_API_TOKEN=
