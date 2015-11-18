@@ -5,15 +5,19 @@ export EDITOR="vim";
 export PATH=$PATH:$HOME/.dotfiles/bin
 
 # docker-machine
-if [ $(docker-machine ls | awk 'FNR == 2 { print $3 }') = 'Running' ]; then
-  eval "$(docker-machine env dev)"
+if [ $(docker-machine >/dev/null 2>&1) ]; then
+  if [ $(docker-machine ls | awk 'FNR == 2 { print $3 }') = 'Running' ]; then
+    eval "$(docker-machine env dev)"
+  fi
 fi
 
 # Misc
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # z
-sh $HOME/Code/z/z.sh
+if [ -f $HOME/Code/z/z.sh ]; then
+  sh $HOME/Code/z/z.sh
+fi
 
 # Export machine specific environment variables
 if [ -f $HOME/.dotfiles/exports.local ]; then
