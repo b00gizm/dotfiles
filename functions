@@ -148,6 +148,10 @@ function d:remove() {
   docker ps -a -q -f status=exited | awk '{print $1}' | xargs docker rm
 }
 
+function d:rmi() {
+  docker rmi ${@} $(docker images -a | grep "^<none>" | awk '{print $3}')
+}
+
 function d:cleanup() {
   docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
 }
@@ -156,4 +160,9 @@ function d:meh() {
   d:kill
   d:remove
   d:cleanup
+}
+
+function d:fuckit() {
+  d:meh
+  d:rmi -f
 }
