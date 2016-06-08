@@ -106,15 +106,6 @@ function o() {
   fi;
 }
 
-# Log into a docker-compose container an run commands inside a bash
-function fig-bash() {
-  if [ $# -eq 0 ]; then
-    docker-compose run --rm web bash;
-  else
-    docker-compose run --rm web $1;
-  fi;
-}
-
 # Docker goodies
 function d:ip() {
   if [ $# -eq 0 ]; then
@@ -146,23 +137,23 @@ function d:kill() {
 
 function d:remove() {
   docker ps -a -q -f status=exited | awk '{print $1}' | xargs docker rm
-}
-
-function d:rmi() {
-  docker rmi ${@} $(docker images -a | grep "^<none>" | awk '{print $3}')
+  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
 }
 
 function d:cleanup() {
-  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+  docker run \
+    -v /var/run/docker.sock:/var/run/docker.sock:rw \
+    -v /var/lib/docker:/var/lib/docker:rw \
+    -e LOOP=false \
+    meltwater/docker-cleanup:latest
 }
 
 function d:meh() {
   d:kill
   d:remove
-  d:cleanup
 }
 
 function d:fuckit() {
   d:meh
-  d:rmi -f
+  d:cleanup
 }
