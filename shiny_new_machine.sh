@@ -35,8 +35,6 @@ brew cleanup
 
 ### Common Tools
 
-# nvm - Node Version Manager
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
 # github.com/jiahaog/nativefier
 npm install nativefier -g
 
