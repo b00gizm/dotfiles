@@ -76,26 +76,6 @@ gifify() {
   fi
 }
 
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
-# opens the given location
-function s() {
-  if [ $# -eq 0 ]; then
-    subl .;
-  else
-    subl "$@";
-  fi;
-}
-
-# `a` with no arguments opens the current directory in Atom Editor, otherwise
-# opens the given location
-function a() {
-  if [ $# -eq 0 ]; then
-    atom .;
-  else
-    atom "$@";
-  fi;
-}
-
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
@@ -132,28 +112,21 @@ function d:env() {
 }
 
 function d:kill() {
-  docker ps -q | awk '{print $1}' | xargs docker kill
+  docker kill $(docker ps -q)
 }
 
 function d:remove() {
-  docker ps -a -q -f status=exited | awk '{print $1}' | xargs docker rm
-  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+  docker rm $(docker ps -a -q)
 }
 
 function d:cleanup() {
-  docker run \
-    -v /var/run/docker.sock:/var/run/docker.sock:rw \
-    -v /var/lib/docker:/var/lib/docker:rw \
-    -e LOOP=false \
-    meltwater/docker-cleanup:latest
-}
-
-function d:meh() {
-  d:kill
-  d:remove
+  docker rm $(docker ps -a -q) 
+  docker rmi $(docker images -q -f dangling=true)
+  docker rmi $(docker images | grep "^<none>" | awk '{ print $3 }')
 }
 
 function d:fuckit() {
-  d:meh
-  d:cleanup
+  d:kill
+  d:remove
+  docker rmi $(docker images -q)
 }

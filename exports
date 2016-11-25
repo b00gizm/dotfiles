@@ -11,10 +11,6 @@ if [ $(docker-machine >/dev/null 2>&1) ]; then
   fi
 fi
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
 # Misc
 export ANDROID_HOME=/usr/local/opt/android-sdk
 

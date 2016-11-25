@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # this symlinks all the dotfiles (and .vim/) to ~/
 # it also symlinks ~/bin for easy updating
@@ -135,7 +135,7 @@ print_success() {
 
 
 # finds all .dotfiles in this folder
-declare -a FILES_TO_SYMLINK=".gitconfig .gitignore .zshrc .vimrc.before .vimrc.after .gvimrc.before .gvimrc.after .tmux.conf"
+declare -a FILES_TO_SYMLINK=".gitconfig .gitignore .zshrc .tmux.conf"
 
 main() {
     local i=""

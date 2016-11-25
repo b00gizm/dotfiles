@@ -1,6 +1,5 @@
 [user]
-	name         = Pascal Cremer
-	email        = b00gizm@gmail.com
+	name = Pascal Cremer
 
 [core]
   ui           = always

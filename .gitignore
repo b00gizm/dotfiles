@@ -16,6 +16,10 @@ Thumbs.db
 # PhpStorm meta files
 .idea
 
+# Sublime Text meta files
+*.sublime-workspace
+*.sublime-project
+
 # Compiled Python files
 *.pyc
 
