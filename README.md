@@ -1,6 +1,14 @@
 # dotfiles
 
-My very own dotfiles
+My very own opinionated dotfiles. 
+
+## Installation (Mac)
+
+For maximium awesomeness, run this in the terminal of your new machine:
+
+```bash
+curl https://raw.github.com/b00giZm/dotfiles/master/shiny_new_machine.sh | bash
+```
 
 ## Maintainer
 
