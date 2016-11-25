@@ -106,5 +106,5 @@ sh ./symlink_files.sh
 print_success "YAY! Your new Mac is ready!"
 
 if [ ! -f $HOME/.dotfiles/exports.local ]; then
-  print_warning "File $HOME/.dotfiles/exports.local  not found. You should provide one."
+  print_warning "File $HOME/.dotfiles/exports.local not found. You should provide one."
 fi
