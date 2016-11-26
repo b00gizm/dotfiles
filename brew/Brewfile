@@ -2,6 +2,9 @@
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
+# android-sdk formulae depends on it
+cask 'java'
+
 # CLI
 brew 'android-sdk'
 brew 'carthage'
@@ -15,7 +18,6 @@ brew 'glide'
 brew 'go'
 brew 'heroku-toolbelt'
 brew 'httpie'
-brew 'java'
 brew 'kubernetes-cli'
 brew 'libyaml'
 brew 'mas'
@@ -50,7 +52,6 @@ cask 'google-chrome'
 cask 'hazel'
 cask 'istat-menus'
 cask 'iterm2'
-cask 'java'
 cask 'kaleidoscope'
 cask 'phpstorm'
 cask 'screenflow'
