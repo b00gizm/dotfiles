@@ -75,7 +75,7 @@ brew tap Homebrew/bundle
 brew update
 brew bundle --file=brew/Brewfile
 brew cleanup
-
+brew cask cleanup
 
 ### Common Tools
 print_info "Step #6 - Installing common tools…"
