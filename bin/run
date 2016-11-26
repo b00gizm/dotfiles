@@ -2,8 +2,6 @@
 
 set -e
 
-pushd "$(dirname $0)" > /dev/null
-
 options=''
 [[ -n ${SSH_AUTH_SOCK} ]] && options+=" -v ${SSH_AUTH_SOCK}:/run/ssh.sock -e SSH_AUTH_SOCK=/run/ssh.sock"
 
