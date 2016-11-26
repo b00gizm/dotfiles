@@ -12,5 +12,7 @@ ${DIR}/run \
     -it \
     -e HOME=/root \
 	-v ${configDir}:/root/.config/nvim \
-	-v ${HOME}/.local:/root/.local \
+	-v ${HOME}/neovim/.cache:/root/.cache\
+	-v ${HOME}/neovim/.local:/root/.local \
+        -v ${HOME}/neovim/.npm:/root/.npm \
 	b00gizm/neovim:latest sh -c "nvim ${@}"
