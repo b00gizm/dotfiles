@@ -7,7 +7,7 @@ My very own opinionated dotfiles.
 For maximium awesomeness, run this in the terminal of your new machine:
 
 ```bash
-curl https://raw.github.com/b00giZm/dotfiles/master/shiny_new_machine.sh | bash
+curl -L https://raw.github.com/b00giZm/dotfiles/master/shiny_new_machine.sh | bash
 ```
 
 ## Maintainer
