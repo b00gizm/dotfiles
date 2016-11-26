@@ -29,13 +29,8 @@ print_success() {
 
 print_header
 
-### Clone this repo
-print_info "Step #1 - Cloning to $HOME/.dotfiles…"
-git clone https://github.com/b00giZm/dotfiles $HOME/.dotfiles
-cd $HOME/.dotfiles
-
 ### Xcode Command Line Tools
-print_info "Step #2 - Installing Xcode command line tools…"
+print_info "Step #1 - Installing Xcode command line tools…"
 
 # thx  https://github.com/alrra/dotfiles/blob/c2da74cc333/os/os_x/install_applications.sh#L39
 if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
@@ -51,6 +46,11 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
        sudo xcodebuild -license
    fi
 fi
+
+### Clone this repo
+print_info "Step #2 - Cloning to $HOME/.dotfiles…"
+git clone https://github.com/b00giZm/dotfiles $HOME/.dotfiles
+cd $HOME/.dotfiles
 
 ### oh-my-zsh
 print_info "Step #3 - Installing oh-my-zsh…"
