@@ -7,7 +7,7 @@ pushd "$(dirname $0)" > /dev/null
 options=''
 [[ -n ${SSH_AUTH_SOCK} ]] && options+=" -v ${SSH_AUTH_SOCK}:/run/ssh.sock -e SSH_AUTH_SOCK=/run/ssh.sock"
 
-CACHE_CONTAINER=cache-container-$(pwd | sha1sum | awk '{print $1}')
+CACHE_CONTAINER=cache-container-$(pwd | shasum | awk '{print $1}')
 
 if ! docker ps -a --no-trunc | grep -q "${CACHE_CONTAINER}"; then
     docker run -v ${HOME%/*} -v /root --name=${CACHE_CONTAINER} busybox chmod 1777 ${HOME%/*}
