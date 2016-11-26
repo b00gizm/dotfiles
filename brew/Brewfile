@@ -5,7 +5,6 @@ tap 'caskroom/fonts'
 # CLI
 brew 'android-sdk'
 brew 'carthage'
-brew 'composer'
 brew 'ctags'
 brew 'docker-compose'
 brew 'docker-machine'
