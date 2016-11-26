@@ -48,9 +48,10 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
 fi
 
 ### Clone this repo
-print_info "Step #2 - Cloning to $HOME/.dotfiles…"
+print_info "Step #2 - Cloning / Updating to $HOME/.dotfiles…"
 git clone https://github.com/b00giZm/dotfiles $HOME/.dotfiles
 cd $HOME/.dotfiles
+git pull origin master
 
 ### oh-my-zsh
 print_info "Step #3 - Installing oh-my-zsh…"
