@@ -10,6 +10,7 @@ fi
 
 ${DIR}/run \
     -it \
+    -e HOME=/root \
 	-v ${configDir}:/root/.config/nvim \
 	-v ${HOME}/.local:/root/.local \
 	b00gizm/neovim:latest sh -c "nvim ${@}"
