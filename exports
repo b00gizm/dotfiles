@@ -2,7 +2,7 @@
 export EDITOR="vim";
 
 # expand $PATH
-export PATH=$PATH:$HOME/.dotfiles/bin
+export PATH=$HOME/.dotfiles/bin:$PATH
 
 # docker-machine
 if [ $(docker-machine >/dev/null 2>&1) ]; then
