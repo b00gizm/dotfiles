@@ -9,6 +9,7 @@ if [ ! -d $configDir ]; then
 fi
 
 ${DIR}/run \
+    -it \
 	-v ${configDir}:/root/.config/nvim \
 	-v ${HOME}/.local:/root/.local \
 	b00gizm/neovim:latest sh -c "nvim ${@}"
