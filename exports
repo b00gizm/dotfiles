@@ -1,8 +1,8 @@
-# Make vim the default editor
-export EDITOR="vim";
+# set default editor (change inside exports.local)
+export EDITOR=vim
 
-# expand $PATH
-export PATH=$HOME/.dotfiles/bin:$PATH
+# expand $PATH (further expansion inside exports.local)
+export PATH="$HOME/.dotfiles/bin:$PATH"
 
 # docker-machine
 if [ $(docker-machine >/dev/null 2>&1) ]; then

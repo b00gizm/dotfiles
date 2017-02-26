@@ -5,4 +5,4 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 ${DIR}/run \
 	-v "$(pwd)":"/app" \
 	-w /app \
-	php:7.0 php ${@}
+	php:7.1 php ${@}

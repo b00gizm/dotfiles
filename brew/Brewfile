@@ -18,6 +18,7 @@ brew 'glide'
 brew 'go'
 brew 'heroku-toolbelt'
 brew 'httpie'
+brew 'homebrew/php/php71'
 brew 'kubernetes-cli'
 brew 'libyaml'
 brew 'mas'
@@ -93,6 +94,7 @@ mas 'Dash (2.2.6)', id: 458034879
 mas 'GIF Brewery 3 (3.1.1)', id: 1081413713
 
 # Fonts
+cask 'font-fira-code'
 cask 'font-hack'
 cask 'font-inconsolata'
 cask 'font-open-sans'
