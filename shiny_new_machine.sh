@@ -57,20 +57,12 @@ git pull origin master
 print_info "Step #3 - Installing oh-my-zsh…"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-### powerline-shell
-print_info "Step #4 - Installing oh-my-zsh…"
-git clone https://github.com/milkbikis/powerline-shell $HOME/Code/powerline-shell
-cp $HOME/Code/powerline-shell/config.py.dist $HOME/Code/powerline-shell/config.py
-cd $HOME/Code/powerline-shell && sh -c ./install.py && cd -
-ln -s $HOME/Code/powerline-shell/powerline-shell.py $HOME/powerline-shell.py
-
 ### Neovim stuff
-print_info "Step #5 - Cloning neovim-config to $HOME/.config/nvim…"
+print_info "Step #4 - Cloning neovim-config to $HOME/.config/nvim…"
 git clone https://github.com/b00giZm/neovim-config $HOME/.config/nvim
 
-
 ### Homebrew & Cask
-print_info "Step #6 - Installing Homebrew and all formulars from $(pwd)/brew/Brewfile…"
+print_info "Step #5 - Installing Homebrew and all formulars from $(pwd)/brew/Brewfile…"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask
 
@@ -84,7 +76,7 @@ brew cleanup
 brew cask cleanup
 
 ### Common Tools
-print_info "Step #7 - Installing common tools…"
+print_info "Step #6 - Installing common tools…"
 
 # github.com/jiahaog/nativefier
 npm install nativefier -g
@@ -98,6 +90,11 @@ npm install -g git-open
 # github.com/rupa/z
 git clone https://github.com/rupa/z.git $HOME/Code/z
 chmod +x $HOME/Code/z/z.sh
+
+### Hyper.app
+print_info "Step #7 - Installing stuff for Hyper.app…"
+npm install -g pure-prompt hpm-cli
+
 
 ### Set OS X defaults
 print_info "Step #8 - Setting macOS defaults…"
