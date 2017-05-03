@@ -7,7 +7,7 @@ cask 'java'
 
 # CLI
 brew 'android-sdk'
-brew 'carthage'
+brew 'composer'
 brew 'ctags'
 brew 'docker-compose'
 brew 'docker-machine'
@@ -27,7 +27,6 @@ brew 'mitmproxy'
 brew 'nmap'
 brew 'ngrep'
 brew 'node'
-brew 'nmap'
 brew 'openssl'
 brew 'ssh-copy-id'
 brew 'tree'
@@ -46,7 +45,6 @@ cask 'dropbox'
 cask 'duet'
 cask 'evernote'
 cask 'firefox'
-cask 'flux'
 cask 'geekbench'
 cask 'google-chrome'
 cask 'hazel'
@@ -60,6 +58,7 @@ cask 'screenflow'
 cask 'sequel-pro'
 cask 'sketch'
 cask 'skitch'
+cask 'slack'
 cask 'sonos'
 cask 'steam'
 cask 'sublime-text'
@@ -69,9 +68,9 @@ cask 'utorrent'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'vlc'
+cask 'whatsapp'
 
 # Mac AppStore
-mas 'Quiver (3.0.3)', id: 866773894
 mas 'Monity (1.4.1)', id: 915542151
 mas 'Keynote (7.0.5)', id: 409183694
 mas 'Browser Fairy (1.7.5)', id: 483014855
@@ -86,10 +85,8 @@ mas 'Divvy (1.5)', id: 413857545
 mas 'Tweetbot (2.4.4)', id: 557168941
 mas 'Numbers (4.0.5)', id: 409203825
 mas 'Xcode (8.1)', id: 497799835
-mas 'Wunderlist (3.4.5)', id: 410628904
 mas 'Pages (6.0.5)', id: 409201541
 mas 'Fantastical (1.3.19)', id: 435003921
-mas 'Trillian (3.4)', id: 412056820
 mas 'Yoink (3.2.6)', id: 457622435
 mas 'Deliveries (2.1.2)', id: 924726344
 mas 'Dash (2.2.6)', id: 458034879
