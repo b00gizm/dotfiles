@@ -6,9 +6,8 @@ tap 'caskroom/fonts'
 cask 'java'
 
 # CLI
-brew 'android-sdk'
-brew 'composer'
 brew 'ctags'
+brew 'composer'
 brew 'docker-compose'
 brew 'docker-machine'
 brew 'ffmpeg'
@@ -18,8 +17,8 @@ brew 'glide'
 brew 'go'
 brew 'heroku-toolbelt'
 brew 'httpie'
-brew 'homebrew/php/php71'
-brew 'homebrew/php/php71-xdebug'
+brew 'php71'
+brew 'php71-xdebug'
 brew 'kubernetes-cli'
 brew 'libyaml'
 brew 'mas'
@@ -91,6 +90,7 @@ mas 'Yoink (3.2.6)', id: 457622435
 mas 'Deliveries (2.1.2)', id: 924726344
 mas 'Dash (2.2.6)', id: 458034879
 mas 'GIF Brewery 3 (3.1.1)', id: 1081413713
+mas 'Deckset (1.8.0)' id: 847496013
 
 # Fonts
 cask 'font-fira-code'

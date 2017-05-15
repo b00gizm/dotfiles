@@ -67,7 +67,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install caskroom/cask/brew-cask
 
 # Add support for Brewfiles
-brew tap Homebrew/bundle
+brew tap homebrew/bundle
+brew tap homebrew/php
 
 # Install ALL THE THINGS!
 brew update
