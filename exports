@@ -16,7 +16,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # z
 if [ -f $HOME/Code/z/z.sh ]; then
-  sh $HOME/Code/z/z.sh
+  source $HOME/Code/z/z.sh
 fi
 
 # Export machine specific environment variables
