@@ -57,10 +57,6 @@ git pull origin master
 print_info "Step #3 - Installing oh-my-zsh…"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-### Neovim stuff
-print_info "Step #4 - Cloning neovim-config to $HOME/.config/nvim…"
-git clone https://github.com/b00giZm/neovim-config $HOME/.config/nvim
-
 ### Homebrew & Cask
 print_info "Step #5 - Installing Homebrew and all formulars from $(pwd)/brew/Brewfile…"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
