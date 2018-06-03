@@ -80,6 +80,7 @@ mas 'Dash (2.2.6)', id: 458034879
 mas 'GIF Brewery 3 (3.1.1)', id: 1081413713
 mas 'Deckset (1.8.0)', id: 847496013
 mas 'Ulysses (13)', id: 1225570693
+mas 'Spark - Love your email again (2.0.2)', id: 1176895641
 
 # Fonts
 cask 'font-fira-code'
