@@ -17,8 +17,6 @@ brew 'nmap'
 brew 'ngrep'
 brew 'node'
 brew 'openssl'
-brew 'php71'
-brew 'php71-xdebug'
 brew 'ssh-copy-id'
 brew 'tree'
 brew 'tmux'
@@ -80,6 +78,7 @@ mas 'Deliveries (2.1.2)', id: 924726344
 mas 'Dash (2.2.6)', id: 458034879
 mas 'GIF Brewery 3 (3.1.1)', id: 1081413713
 mas 'Deckset (1.8.0)', id: 847496013
+mas 'Ulysses (13)', id: 1225570693
 
 # Fonts
 cask 'font-fira-code'
