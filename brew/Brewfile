@@ -25,7 +25,6 @@ brew 'watch'
 brew 'wget'
 
 # Apps
-cask '1password'
 cask 'appcleaner'
 cask 'alfred'
 cask 'balsamiq-mockups'
